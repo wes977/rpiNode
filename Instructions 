@@ -1,0 +1,40 @@
+Wes Thompson 	
+April 2017 
+
+This is the instructions to set up the Raspberry pi and the breadboard to get an led to blink and all that from this code 
+Things used 
+	Node 		- Main language 
+	Ajax		- Making a on click call
+	Express		- Doing the web server
+	on off		- Controlling the LEDs 
+	
+
+Step One  Download all files from github 
+		> index.html	- This is your web page 
+		> blink.js 	- This is the node server and all that 
+		> wPageClient.js- This is where the web page controls are and all that like click
+		> node_modules 	- This is all that packages you need and all that fun stuff 
+		> package.json 	- This is the manifest for the project you need this to let node knwo what stuff you are using 
+
+Step Two Hook the wires up You will need an LED , resistor and three pieces of wire 
+	(Red)One wire to end of LED and the other end of that wire to pin 7 (Right row (the one closest to HDMI) forth from bottom(bottom is from the SD card))
+	(Yellow)The other wire goes to your resistor and the resistor goes to the led 
+	(Yellow)The other wire goes to the ground pin which is pin 6 (Left row (the one farthest to HDMI) second from bottom(bottom is from the SD card))
+
+Step Three Open terminal and go to the folder that holds this code 
+	EX cd /home/pi/blinkLEDNode
+
+Step Four Open terminal and run the program
+	EX node blink.js
+	you should be able to told the port it was running on
+
+Step Five Using it 	
+	Get the Pi's Ip and type it into another pcs address bar (The other pc needs to be on same network) with the port it tells you to after 
+	EX 192.168.11.23:3000
+
+Step Six Click the button
+	Should change state of button!
+
+Have fun !
+
+	- Wes Thompson

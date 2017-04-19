@@ -27,7 +27,7 @@ var inputs = [    { pin: '4', gpio: '23', value: 0 }];
 
 // ============================================================================
 // Setting up the pin we are controling and all that so it pin 4 and all that
-// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+// vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvindex
 var Gpio = onoff.Gpio,led = new Gpio(inputs[0].pin, 'out'),interval;
 // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 // Setting up the pin we are controling and all that so it pin 4 and all that
